@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+
+<style type="text/css">
+.comments {border-collapse:collapse;border-spacing:0;margin:0px;padding:0px;width:280px;box-shadow: 8px 8px 5px #888888;-moz-border-radius-bottomleft:14px;-webkit-border-bottom-left-radius:14px;border-bottom-left-radius:14px;-moz-border-radius-bottomright:14px;-webkit-border-bottom-right-radius:14px;border-bottom-right-radius:14px;-moz-border-radius-topright:14px;-webkit-border-top-right-radius:14px;border-top-right-radius:14px;-moz-border-radius-topleft:14px;-webkit-border-top-left-radius:14px;border-top-left-radius:14px;}
+.comments .title {color:#fff;border-top-left-radius: 14px;border-top-right-radius: 14px;text-align:center;background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ff7f00), color-stop(1, #bf5f00) );background: -moz-linear-gradient(center top , #FF7F00 5%, #BF5F00 100%) repeat scroll 0% 0% #FF7F00;filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff7f00", endColorstr="#bf5f00");background-color: #ff7f00;padding: 20px;}
+.scroller{padding:20px;width:280px;height:440px;overflow:hidden;}
+ul.w2b_recent_comments{list-style:none;margin:0;padding:0;}.w2b_recent_comments li{background:none!important;margin:0 0 6px!important;padding:0 0 6px 0!important;display:block;clear:both;overflow:hidden;list-style:none;}.w2b_recent_comments li a{color:#0E6B91;}.w2b_recent_comments li .avatarImage{padding:3px;background:#fefefe;-webkit-box-shadow:0 1px 1px #ccc;-moz-box-shadow:0 1px 1px #ccc;box-shadow:0 1px 1px #ccc;float:left;margin:0 6px 0 0;position:relative;overflow:hidden;}.avatarRound{-webkit-border-radius:100px;-moz-border-radius:100px;border-radius:100px;}.w2b_recent_comments li img{padding:0px;position:relative;overflow:hidden;display:block;}.w2b_recent_comments li span{margin-top:4px;color:#666;display:block;line-height:1.4;}
+</style>
+
+<table class="comments">
+<tr><td class="title">Últimos comentarios</td></tr>
+<tr><td><div class="scroller">
+<script type="text/javascript">
+var numComments  = 20, showAvatar  = true, avatarSize  = 40, roundAvatar = true, characters  = 50, showMorelink = true, moreLinktext = "M&aacute;s &#187;", defaultAvatar  = "http://i.imgur.com/3QqaBeS.png"
+</script>
+<script src="w2b_recent_comments_with_avatars.js"></script>
+<script src="https://jmacuna73.blogspot.com/feeds/comments/default?alt=json&amp;callback=w2b_recent_comments"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="scrollForever.js"></script>
+</div></td></tr>
+</table>
+<script type="text/javascript">
+$(document).ready(function(){$(".scroller").scrollForever({dir:"top",container:"ul",inner:"li",speed:1000,delayTime:10,continuous:true,num:1});});
+</script>
+
+</body>
+</html>
